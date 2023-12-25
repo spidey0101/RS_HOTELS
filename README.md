@@ -6,7 +6,7 @@ Welcome to rs_hotel, a collaborative project designed to revolutionize hotel man
 
 ### Features 🌟
 
-- Frontend: Developed by @Satya using HTML and CSS to create an intuitive and visually appealing user interface for guests during account creation and browsing.
+- Frontend: Developed by @Satya and me using HTML and CSS to create an intuitive and visually appealing user interface for guests during account creation and browsing.
 - Backend: Developed by Roshan Avinash(me) and powered by PHP and MySQL, ensuring secure data management for customer information, bookings, and system operations.
 
 ### Functionality 🛠️
