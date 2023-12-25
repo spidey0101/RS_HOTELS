@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About RS Hotels</title>
+  <link rel="stylesheet" href="hotel.css">
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+    .about-section {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    p {
+      color: #666;
+      line-height: 1.6;
+    }
+    .show-reviews-btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .show-reviews-btn:hover {
+      background-color: #0056b3;
+    }
+    .review-dialog {
+      display: none;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+    .review {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .review img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .review-details {
+      flex-grow: 1;
+    }
+    .review-details strong {
+      font-weight: bold;
+    }
+    .rating {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="about-section">
+    <h1>About Our Hotel</h1>
+    <p>
+      <h2>RS Hotels: India’s Luxury Hospitality</h2>
+
+RS Hotels started in 2004 and is famous for great hospitality in India.
+
+Other brands in the RS Hotels group include:
+
+<p>RS Hotels: They welcome guests with a warm 'Namaste' and focus on luxury that's kind to nature and society. Each hotel is special and cares for the environment. They also partner with Marriott for luxury experiences and have top ratings for being eco-friendly.</p>
+
+<p>Memorii: It's the new addition to RS Hotels, offering unique hotels with beautiful designs, delicious food, special services, and a commitment to nature. These hotels are in different places, from modern to historic ones.</p>
+
+<p>Welcome hotel: These hotels represent Indian culture while meeting high standards. They’re in various places, making trips better for both leisure and business travelers.</p>
+
+<p>Storii: RS Hotels picked special small hotels for travelers who love unique experiences. You'll find these in unexpected places, promising different experiences for each stay.</p>
+
+<p>Fortune Hotels: Part of RS Hotels, they offer good hotels for both business and leisure travelers. These hotels are known for great service, good food, and good locations.</p>
+
+<p>WelcomHeritage: These hotels show the best of Indian heritage with beautiful palaces and forts in 37 scenic spots. They mix traditional styles with modern needs.</p>
+
+<h3>RS Hotels:</h3>
+<p>Each RS Hotel shows the culture of its location through its design, art, and style. They believe in luxury that doesn’t harm nature. They follow eco-friendly practices to help the environment while providing luxury experiences.
+
+Their "Responsible Luxury" means luxury and caring for nature go hand in hand. They build hotels in a way that helps the environment and communities. All RS Hotels are eco-friendly certified, ensuring guests enjoy guilt-free luxury.</p>
+
+
+    </p>
+
+    <!-- Show Reviews button -->
+    <button id="show-reviews-btn" class="show-reviews-btn">Show Reviews</button>
+    
+    <!-- Reviews Section (Initially Hidden) -->
+    <div id="review-dialog" class="review-dialog">
+      <div class="review-content">
+        <h3>Customer Reviews</h3>
+        <div class="review">
+          <img src="profile1.png" alt="Profile Picture">
+          <div class="review-details">
+            <p><strong>Saniya</strong></p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9734;</span>
+            </div>
+            <p>"Great experience at this hotel. Excellent service and comfortable rooms!"</p>
+          </div>
+        </div>
+        <div class="review">
+          <img src="profile2.png" alt="Profile Picture">
+          <div class="review-details">
+            <p><strong>Shubam</strong></p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <p>"Amazing hotel! Loved the amenities and friendly staff."</p>
+          </div>
+        </div>
+        <div class="review">
+          <img src="profile3.png" alt="Profile Picture">
+          <div class="review-details">
+            <p><strong>Satya</strong></p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9734;</span>
+            </div>
+            <p>"Great experience at this hotel."</p>
+          </div>
+        </div>
+        <div class="review">
+          <img src="profile4.png" alt="Profile Picture">
+          <div class="review-details">
+            <p><strong>Roshan</strong></p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9734;</span>
+            </div>
+            <p>"Excellent Service.Totally loved it!!"</p>
+          </div>
+        </div>
+        
+        
+        <button id="close-dialog-btn" class="close-dialog-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to adjust the display of reviews when the button is clicked
+    document.getElementById('show-reviews-btn').addEventListener('click', function() {
+      var reviewDialog = document.getElementById('review-dialog');
+      if (reviewDialog.style.display === 'none' || reviewDialog.style.display === '') {
+        reviewDialog.style.display = 'block';
+      } else {
+        reviewDialog.style.display = 'none';
+      }
+    });
+  
+    document.getElementById('close-dialog-btn').addEventListener('click', function() {
+      document.getElementById('review-dialog').style.display = 'none';
+    });
+  </script>
+  
+</body>
+</html>

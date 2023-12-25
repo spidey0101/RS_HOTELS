@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.intro {
+  position: relative;
+  height: 100vh;
+  background: url('hotel-img.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px; /* Added padding for better readability */
+  line-height: 1.5; /* Increased line height for better spacing */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.content {
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 40px; /* Increased margin between lines */
+}
+
+h1 {
+  font-size: 5em;
+  margin-bottom: 30px; /* Increased space after the heading */
+}
+
+.navigation {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px; /* Increased margin between lines */
+}
+
+.nav-btn {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.book-now-btn {
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 40px; 
+}
+
+.book-now-btn:hover {
+  background-color: #0056b3;
+}
+
+.additional-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px; 
+}
+
+.additional-links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.additional-links a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.additional-links.small-font a {
+  font-size: 14px; 
+}
+
+
+.review-dialog {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.review img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.review-details {
+  flex: 1;
+}
+
+.rating {
+  color: #f1c40f; /* Star color */
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.star {
+  font-size: 18px;
+}

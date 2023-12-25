@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Booking System</title>
+  <link rel="stylesheet" href="hotel.css">
+  <style>
+    /* Add CSS styles for the Show Reviews button */
+    .show-reviews-btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .show-reviews-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="intro">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Welcome to Our RS-Hotels</h1>
+      <nav class="navigation">
+        <a href="hotel.html" class="nav-btn">Home</a>
+        <a href="contact.html" class="nav-btn">Feedback</a> <!-- Link to Contact Us page -->
+        <a href="about_us.html" class="nav-btn">About Us</a> <!-- Link to about_us.html -->
+        <a href="#" class="nav-btn">Login</a>
+        <a href="register.html" class="nav-btn">Register</a>
+      </nav>
+      <a href="booking.html" class="book-now-btn">Book Now</a>
+      <div class="additional-links">
+        <a href="#">FAQ</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Policy</a>
+        <a href="#">Contact Us</a>
+
+    <!-- Reviews Section (Initially Hidden) -->
+    <div id="review-dialog" class="review-dialog" style="display: none;">
+      <div class="review-content">
+        <h3>Customer Reviews</h3>
+        <!-- Reviews will appear here -->
+        <!-- Mock Reviews Here -->
+        <button id="close-dialog-btn" class="close-dialog-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="hotel.js"></script>
+</body>
+</html>
+
